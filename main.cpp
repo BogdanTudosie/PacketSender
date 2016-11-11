@@ -59,6 +59,9 @@ int main(int argc, char** argv) {
             printf("Sent message: %s to %s \n", message, argv[1]);
         }
     }
+
+    // clean up and close file handlers
+    
     close(socket_fd);
     return 0;
 }
